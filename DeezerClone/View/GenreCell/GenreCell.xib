@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GenreCell" customModule="DeezerClone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="164" height="199"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="164" height="199"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music Genre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2nW-yc-ECc">
+                        <rect key="frame" x="0.0" y="174" width="164" height="25"/>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pcg-G1-Peg">
+                        <rect key="frame" x="0.0" y="0.0" width="164" height="164"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dwT-Wn-VLU">
+                                <rect key="frame" x="5" y="5" width="154" height="154"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="154" id="AYD-id-Nyf"/>
+                                    <constraint firstAttribute="height" constant="154" id="dS8-oz-Evr"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="dwT-Wn-VLU" secondAttribute="bottom" constant="5" id="2VP-vO-MYC"/>
+                            <constraint firstAttribute="trailing" secondItem="dwT-Wn-VLU" secondAttribute="trailing" constant="5" id="2qb-5d-HFH"/>
+                            <constraint firstItem="dwT-Wn-VLU" firstAttribute="top" secondItem="pcg-G1-Peg" secondAttribute="top" constant="5" id="DCq-bJ-V12"/>
+                            <constraint firstItem="dwT-Wn-VLU" firstAttribute="leading" secondItem="pcg-G1-Peg" secondAttribute="leading" constant="5" id="Pdy-VO-9LR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="2nW-yc-ECc" secondAttribute="trailing" id="2RT-2w-pCm"/>
+                <constraint firstItem="2nW-yc-ECc" firstAttribute="top" secondItem="pcg-G1-Peg" secondAttribute="bottom" constant="10" id="7X3-6D-76C"/>
+                <constraint firstItem="2nW-yc-ECc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Dze-Lr-6cH"/>
+                <constraint firstItem="pcg-G1-Peg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Out-CW-IjB"/>
+                <constraint firstItem="pcg-G1-Peg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dJu-HW-i7P"/>
+                <constraint firstAttribute="trailing" secondItem="pcg-G1-Peg" secondAttribute="trailing" id="myz-vl-Fa9"/>
+                <constraint firstAttribute="bottom" secondItem="2nW-yc-ECc" secondAttribute="bottom" id="nHc-uF-R0U"/>
+            </constraints>
+            <connections>
+                <outlet property="genreImageView" destination="dwT-Wn-VLU" id="EF1-iY-wjG"/>
+                <outlet property="genreLabel" destination="2nW-yc-ECc" id="QtT-6A-UTT"/>
+                <outlet property="genreView" destination="pcg-G1-Peg" id="C1Y-au-t6X"/>
+            </connections>
+            <point key="canvasLocation" x="94.656488549618317" y="19.366197183098592"/>
+        </collectionViewCell>
+    </objects>
+</document>
